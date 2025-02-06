@@ -27,4 +27,4 @@ jobs:
         run: aws s3 cp deploy.zip s3://codedeploy-final-proj/deploy.zip
 
       - name: Deploy with CodeDeploy
-        run: aws deploy create-deployment --application-name final-proj-app --deployment-group-name final-proj-deployment --s3-location bucket=codedeploy-final-proj,key=deploy.zip,bundleType=zip
+        run: aws deploy create-deployment --application-name final-proj-app --deployment-group-name final-proj-delpoyment --s3-location bucket=codedeploy-final-proj,key=deploy.zip,bundleType=zip
